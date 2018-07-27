@@ -153,7 +153,7 @@ else
   mkdir ./contigs
 fi
 
-csplit -s -f contig_ -z ${allcontigs} /\>/ {*}
+csplit -f contig_ -s ${allcontigs} /\>/ {*}
 mv contig_* ./contigs/
 
  # generate direct sequence of configs (without spaces)
